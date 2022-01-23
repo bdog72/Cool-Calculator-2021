@@ -30,3 +30,11 @@ inputBtns.forEach(function (inputBtn) {
     inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
   }
 });
+
+// Reset Display
+function resetAll() {
+  calculatorDisplay.textContent = '0';
+}
+
+// Event Listener to reset display to 0
+clearBtn.addEventListener('click', resetAll);
